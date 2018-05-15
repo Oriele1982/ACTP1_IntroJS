@@ -6,13 +6,28 @@
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Ejercicio 2</title>
+     <style>
+       .red{
+        color: red;
+       }
+     </style>
   </head>
   <body>
-    <p> hola </p>
-    <script>
-      $("p").style("color", "red");
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+
+    <p> hola </p>
+    <!-- <script>
+      $("p").css("color", "red");
+    </script> -->
+
+    <script>
+      $("p").addClass("red");
+    </script>
+   
   </body>
 </html>
+
+<!-- El primer error se encuentra en el orden que se encuentra el CDN pues está después del código y no podra ejecutarse, debe ir primero
+  El segundo error se encuentra en la función style que no corresponde por ser una palabra reservada para html  y se usó el método jquery .css-->
